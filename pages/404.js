@@ -12,7 +12,7 @@ const NotFound = () => {
     }, [router])
     return (
         <div className="not-found">
-            <h1>hi this page not avialable</h1>
+            <h1>sorrey this page not avialable</h1>
             <p>Go back to home <Link href="/"><a>HomePage</a></Link> </p>
         </div>
     );
