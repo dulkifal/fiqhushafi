@@ -2,10 +2,14 @@ import styles from '../../styles/fatwas.module.css'
 import Link from 'next/link';
 import { server } from '../../next.config';
 
-export const getStaticProps = async () => {
-    const res = await fetch(`${server}/json.json`);
+export const getServerSideProps  = async ({req}) => {
+    const protocol = req.headers['x-forwarded-proto'] || 'http'
+    const baseUrl = req ? `${protocol}://${req.headers.host}` : ''
+
+    const res = await fetch(`${baseUrl}/json.json`);
     const wres = await fetch(`${server}/api/question`);
     const data = await res.json()
+    console.log(baseUrl);
      return {
         props: { fatwas: data }
     }
