@@ -16,3 +16,15 @@
    color: white;
    text-align: center;
  }
+ .form{
+   display: inline;
+   background-color: #4979ff;
+ }
+ .box{
+   background-color: #badfdf;
+   align-items: center;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px auto;
+    width: 50%;
+ }

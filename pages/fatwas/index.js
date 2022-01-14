@@ -7,7 +7,6 @@ export const getServerSideProps  = async ({req}) => {
     const baseUrl = req ? `${protocol}://${req.headers.host}` : ''
 
     const res = await fetch(`${baseUrl}/json.json`);
-    //const wres = await fetch(`${server}/api/question`);
     const data = await res.json()
     console.log(baseUrl);
      return {
