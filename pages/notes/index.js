@@ -5,6 +5,8 @@ import Box from '@material-ui/core/Box';
 import styles from '../../styles/Home.module.css'
 
 const Index = ({data}) => {
+
+  
    return (
     <div>
       <h1>Notes</h1>

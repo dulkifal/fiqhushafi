@@ -1,11 +1,15 @@
-import { getSortedPostsData } from '../../lip/posts'
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import dbConnect from '../../utils/dbConnect';
+import Note from '../../utils/Note';
+dbConnect();
 
-const posts = process.env.NODE_ENV === 'production' ? require('../../cache/data').posts : getSortedPostsData()
 
-export default (req, res) => {
-  const results = req.query.q ?
-    posts.filter(post => post.title.toLowerCase().includes(req.query.q)) : []
-  res.statusCode = 200
-  res.setHeader('Content-Type', 'application/json')
-  res.end(JSON.stringify({ results }))
+ 
+//const mongoose = require('mongoose');
+
+export default async function handler(req, res) {
+  
+  let ques=await Note.find({$text: {$search: req.body.s}})
+//  Q.insertMany([{q:'daafasdfaf',a:'asdfasdf',p:'asdfasdf'}]).then((err,res) => {console.log(res,err);})
+  res.status(200).json(ques)
 }

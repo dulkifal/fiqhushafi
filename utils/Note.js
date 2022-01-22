@@ -14,4 +14,6 @@ const NoteSchema = new mongose.Schema({
   }
 })
 
+NoteSchema.index({title:"text",descri:"text",})
+
 module.exports = mongose.models.Note || mongose.model('Note', NoteSchema)
