@@ -1,6 +1,7 @@
 import { useCallback, useRef, useState } from 'react'
 import Link from 'next/link'
 import styles from './search.module.css'
+import axios from "axios"
 
 export default function Search() {
 
@@ -15,12 +16,10 @@ export default function Search() {
     const query = event.target.value;
     setQuery(query)
     if (query.length) {
-      fetch(searchEndpoint(query))
-        .then(res => res.json())
-        .then(res => {
-          setResults(res.results)
-        })
-    } else {
+      axios.post("/api/search",{s:query}).then(e=>{
+    
+        setResults(e.data)
+      })   } else {
       setResults([])
     }
   }, [])
