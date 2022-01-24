@@ -10,6 +10,7 @@ dbConnect();
 export default async function handler(req, res) {
   
   let ques=await Note.find({$text: {$search: req.body.s}})
+  console.log(ques)
 //  Q.insertMany([{q:'daafasdfaf',a:'asdfasdf',p:'asdfasdf'}]).then((err,res) => {console.log(res,err);})
   res.status(200).json(ques)
 }

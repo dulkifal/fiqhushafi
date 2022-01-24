@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "express": "nodemon server.js"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -13,10 +14,13 @@
     "axios": "^0.24.0",
     "babel": "^6.23.0",
     "cookies": "^0.8.0",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
     "googleapis": "^92.0.0",
     "gray-matter": "^4.0.3",
     "grey-matter": "^0.0.0",
-    "mongoose": "^6.1.4",
+    "mongoose": "^6.1.7",
+    "morgan": "^1.10.0",
     "next": "^12.0.8",
     "react": "17.0.2",
     "react-dom": "17.0.2",

@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import styles from './search.module.css'
 import axios from "axios"
@@ -9,6 +9,9 @@ export default function Search() {
   const [query, setQuery] = useState('')
   const [active, setActive] = useState(false)
   const [results, setResults] = useState([])
+  const [filteredData, setFilteredData] = useState([]);
+  const [wordEntered, setwordEntered] = useState("");
+  const [data, setData] = useState([]);
 
   const searchEndpoint = (query) => `/api/search?q=${query}`
 
@@ -16,13 +19,25 @@ export default function Search() {
     const query = event.target.value;
     setQuery(query)
     if (query.length) {
-      axios.post("/api/search",{s:query}).then(e=>{
-    
+      axios.post("/api/search", { s: query }).then(e => {
+        console.log(e.data)
         setResults(e.data)
-      })   } else {
-      setResults([])
+      })
     }
-  }, [])
+  })
+  const handleChange = (e) => {
+    let searchWord = e.target.value;
+    setwordEntered(searchWord);
+    let newFilter = data.filter((value) => {
+      console.log(value.title.toLowerCase().includes(searchWord.toLowerCase()))
+      return value.title.toLowerCase().includes(searchWord.toLowerCase());
+    });
+    if (searchWord === "") {
+      setFilteredData([]);
+    } else {
+      setFilteredData(newFilter);
+    }
+  };
 
   const onFocus = useCallback(() => {
     setActive(true)
@@ -35,7 +50,13 @@ export default function Search() {
       window.removeEventListener('click', onClick)
     }
   }, [])
-
+  const getBooks = async () => {
+    let books = await axios.get("/api/notes");
+    setData(books.data);
+  };
+  useEffect(() => {
+    getBooks();
+  }, []);
   return (
     <div
       className={styles.container}
@@ -43,23 +64,47 @@ export default function Search() {
     >
       <input
         className={styles.search}
-        onChange={onChange}
+        onChange={(e) => handleChange(e)}
         onFocus={onFocus}
         placeholder='Search posts'
         type='text'
-        value={query}
+        value={wordEntered}
       />
-      { active && results.length > 0 && (
+      {filteredData.length > 0 ? (
+        <small>{filteredData.length} results</small>
+      ) : (
+        ""
+      )}
+      {filteredData.length > 0 && (
+        <div className="data-results">
+          <div className="overflow-y-scroll overflow-x-hidden	 h-72">
+            {filteredData.slice(0, 1000).map((item, index) => (
+              <>
+                <a
+                  style={{ textDecoration: "none" }}
+                  href={`/notes/${item._id}`}
+                >
+                  <div className="data-item">
+                    <p>{item.title}</p>
+                    <small>{item.category}</small>
+                  </div>
+                </a>
+              </>
+            ))}
+          </div>
+        </div>
+      )}
+      {active && results.length > 0 && (
         <ul className={styles.results}>
-          {results.map(({ id, title }) => (
-            <li className={styles.result} key={id}>
-              <Link href="/posts/[id]" as={`/posts/${id}`}>
-                <a>{title}</a>
+          {results.map((searchData, index => (
+            <li className={styles.result} key={index}>
+              <Link href={`/notes/${searchData._id}`}>
+                <a>{searchData.title}</a>
               </Link>
             </li>
-          ))}
+          )))}
         </ul>
-      ) }
+      )}
     </div>
   )
 }
