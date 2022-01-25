@@ -8,7 +8,7 @@ import Search from './search';
 const Navbar = () => {
     return (
         <  >
-        <div class= "text-center bg-blue-400">
+        <div className= "text-center bg-blue-400">
 
                     <h1 className='underline m-auto'>فقه الشافعية</h1>
         </div>

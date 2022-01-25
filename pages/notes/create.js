@@ -24,25 +24,16 @@ const NewNote = () => {
     }
   }, [errors]);
 
-  const createNote = async () => {
-    // try {
-    //   const res = await fetch('http://localhost:3000/api/notes', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Accept': 'application/json',
-    //       'contest-type': 'applicaton/json'
-
-    //     },
-    //     body: JSON.stringify(form)
-    //   }).then(res => res.json()).then(data => {console.log(data)}).catch(err => {console.log(err)});
-    //   //router.push('/');
-    // } catch (error) {
-    //   console.log(error);
-    // }
-    axios.post('http://localhost:3000/api/notes', form).then(({ data }) => { console.log(data) });
+  const createNote  = async () => {
+     
+    const baseUrl =  'http://localhost:3000';
+  
+    axios.post(`${baseUrl}/api/notes`, form).then(({ data }) => { console.log(data) });
     document.formName.reset()
+    
+     
   }
-
+ 
 
   const handleSubmit = (e) => {
     e.preventDefualt();
@@ -73,7 +64,7 @@ const NewNote = () => {
 
   return (
     <div>
-      <h1  >Create    Note</h1>
+      <h1  >Add Answers</h1>
       <div className={styles.form}>
         {
           isSubmitting ? <h1>loading</h1> :
@@ -82,7 +73,7 @@ const NewNote = () => {
             <form name="formName" onSubmit={handleSubmit} className={styles.form}>
 
               <input name="title"
-                placeholder="Title"
+                placeholder="question"
                 required
                 onChange={handleChange}
                 errors={errors.title ?
@@ -95,7 +86,7 @@ const NewNote = () => {
 
               <textarea name="descri"
                 id="" cols="5" rows="5"
-                placeholder="Descri"
+                placeholder="Answer"
                 required
                 onChange={handleChange}
                 errors={errors.descri ?
@@ -116,5 +107,5 @@ const NewNote = () => {
       </div>
     </div>
   )
-}
+      }
 export default NewNote;
