@@ -9,18 +9,17 @@ const Index = ({data}) => {
   
    return (
     <div>
-      <h1>Notes</h1>
-      <Link href="/notes/new">
-        <a>Create Note  </a>
-      </Link>
+   
       <div>
         {data.map(note => {
           return (
             <div key={note._id}>
                <div className= {styles.box}  >
     <Box     >
-      
+                <p>السوال</p>
+                
               <p>{note.title}</p>
+              <p>الجواب</p>
               <p>{note.descri}</p>
     </Box>
     </div>

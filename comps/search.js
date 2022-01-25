@@ -42,7 +42,7 @@ export default function Search() {
   const onFocus = useCallback(() => {
     setActive(true)
     window.addEventListener('click', onClick)
-  }, [])
+  }, )
 
   const onClick = useCallback((event) => {
     if (searchRef.current && !searchRef.current.contains(event.target)) {
@@ -66,18 +66,19 @@ export default function Search() {
         className={styles.search}
         onChange={(e) => handleChange(e)}
         onFocus={onFocus}
-        placeholder='Search posts'
+        placeholder='Search '
         type='text'
         value={wordEntered}
       />
-      {filteredData.length > 0 ? (
-        <small>{filteredData.length} results</small>
-      ) : (
-        ""
-      )}
       {filteredData.length > 0 && (
         <div className="data-results">
-          <div className="overflow-y-scroll overflow-x-hidden	 h-72">
+          {filteredData.length > 0 ? (
+            <small className='result-count'>{filteredData.length} results</small>
+          ) : (
+            ""
+          )}
+
+          <div className="result-item">
             {filteredData.slice(0, 1000).map((item, index) => (
               <>
                 <a

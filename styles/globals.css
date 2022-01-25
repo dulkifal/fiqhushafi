@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{
   background: #f2f2f2;
   color: #333;
@@ -20,7 +29,7 @@ nav{
   align-items: flex-end;
   border-bottom: 1px solid #ddd;
 }
-nav a{
+nav > a{
   margin-left: 12px;
 }
 nav .logo{
@@ -41,3 +50,34 @@ footer{
   color: #4949ff;
   text-decoration: underline;
 }
+
+.data-results{
+  list-style: none;
+  overflow: hidden;
+  margin: 0 4px;
+  padding:7px 15px 15px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+
+}
+.data-item{
+  padding: 7px 0;
+  
+  border-bottom: 1px solid black;
+  /* background-color: #4949ff; */
+  
+ }
+ .data-item :hover{
+   background-color: #bcbccf;
+ }
+
+ 
+ .result-count{
+  display: inline-block;
+  margin-bottom: 7px;
+}
+
+ 

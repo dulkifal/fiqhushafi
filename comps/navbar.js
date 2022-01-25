@@ -10,6 +10,7 @@ const Navbar = () => {
         <nav >
             <div className="logo">
                     <Image src="/logo.png" alt="fatwas" width={128} height={77} />
+                    <h1>فقه الشافعية</h1>
              
 
             </div>

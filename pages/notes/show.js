@@ -1,8 +1,7 @@
-const Show =()=>{
-    return(
-        <div>
-            <h1>Show</h1>
-        </div>
+export default function Home() {
+    return (
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
     )
-}
-export default Show;
+  }

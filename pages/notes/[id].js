@@ -3,9 +3,9 @@ const Details = ({ data }) => {
 
   return (
     <div>
-      <h1>id</h1>
-      <h1> {data._id}</h1>
-      <h1>{data.title}</h1>
+      <h1> السوال</h1>
+       <h1>{data.title}</h1>
+       <h1>الجواب</h1>
       <h1>{data.descri}</h1>
     </div>
   )
