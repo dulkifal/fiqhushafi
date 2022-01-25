@@ -7,7 +7,7 @@ const dev = process.env.NODE_ENV !== 'production';
 //   server: dev ? 'http://localhost:3000' : 'http://localhost:3000'
 // }
 
-module.exports = {
+// module.exports = {
   
-    MONGO_URI:'mongodb://localhost:27017/notesfortest'
-  };
+//     MONGO_URI:'mongodb://localhost:27017/notesfortest'
+//   };

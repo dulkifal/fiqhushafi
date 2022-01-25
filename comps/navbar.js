@@ -3,17 +3,19 @@ import Image from 'next/image'
 import connectSearchBox from './search'
 import SearchFil from './search';
 import Search from './search';
-
+ 
 
 const Navbar = () => {
     return (
-        <nav >
-            <div className="logo">
-                    <Image src="/logo.png" alt="fatwas" width={128} height={77} />
-                    <h1>فقه الشافعية</h1>
-             
+        <  >
+        <div class= "text-center bg-blue-400">
 
-            </div>
+                    <h1 className='underline m-auto'>فقه الشافعية</h1>
+        </div>
+         
+       
+        <nav className=' '>
+            
            <Link href="/"><a>Home</a></Link>
            <Link href="/fatwas"><a>Fatwas</a></Link>
            <Link href="/about"><a>About</a></Link>
@@ -22,6 +24,7 @@ const Navbar = () => {
              <Search/>
 
         </nav>
+        </>
     );
 }
 
