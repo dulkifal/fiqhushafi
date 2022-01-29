@@ -1,6 +1,6 @@
 const Footer = () => {
     return ( 
-        <footer>
+        <footer className="bg-black text-white">
             Copyright 2021 Dulkifal
            
         </footer>

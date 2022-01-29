@@ -14,10 +14,10 @@ const Index = ({ data }) => {
           return (
             <div key={note._id}>
               <div dir='rtl' className=' p-3'  >
-                <Box className='bg-slate-500 grid gap-2 grid-cols-1 grid-rows-3  '   >
-                  <p className='bg-blue-500 hover:text-white px-3 py-2 rounded-md w-fit'>السوال</p>
+                <Box className='bg-pri-color grid gap-1 grid-cols-1 grid-rows-3  '   >
+                  <p className='bg-sec-color font-bold text-white px-3 py-2 rounded-md h-fit w-fit'>السؤال</p>
                   <p  className='mx-6'>{note.title}</p>
-                  <p className='bg-green-500 hover:text-white px-3 py-2 rounded-md w-fit  '>الجواب</p>
+                  <p className='bg-sec-color font-bold text-white px-3 py-2 rounded-md w-fit h-fit  '>الجواب</p>
                   <p className='mx-6'>{note.descri}</p>
                 </Box>
               </div>
