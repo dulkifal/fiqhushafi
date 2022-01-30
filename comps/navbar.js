@@ -21,7 +21,7 @@ const Navbar = () => {
            <Link href="/notes/create"><a className='hover:bg-sec-color hover:text-white px-3 py-2 rounded-md'>admin</a></Link>
            <Link href="/notes/ask"><a className='hover:bg-sec-color hover:text-white px-3 py-2 rounded-md'>السؤال</a></Link>
 
-             <Search/>
+             <Search  />
 
         </nav>
         </>

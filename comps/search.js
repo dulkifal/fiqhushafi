@@ -66,7 +66,7 @@ export default function Search() {
         className={styles.search}
         onChange={(e) => handleChange(e)}
         onFocus={onFocus}
-        placeholder='Search '
+        placeholder='البحث'
         type='text'
         value={wordEntered}
       />

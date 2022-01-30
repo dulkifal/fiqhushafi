@@ -19,27 +19,30 @@ export default function Form() {
 
     const result = await res.json()
     event.target.reset()
-    // result.user => 'Ada Lovelace'
+ 
   }
 
   return (
-    <form onSubmit={registerUser}>
+    <div className='bg-pri-color p-3  '>
+    <form onSubmit={registerUser} dir="rtl" className="flex flex-col mb-1 py-4 m-auto bg-ter-color w-1/2 form px-5">
       <label htmlFor="name">الأسم</label>
-      <input id="name" name="name" type="text" required />
+      <input id="name" name="name" type="text" required  className=""/>
       <label htmlFor="name">Email</label>
       <input id="email" name="email" type="text" required />
-      <label htmlFor="name">رفم الهاتف</label>
+      <label htmlFor="name">رقم الهاتف</label>
       <input id="phone" name="phone" type="text" required />
-      <label htmlFor="name">السؤال</label>
-      <input id="quest" name="quest" type="text" required />
-      <select name="category" id="category" required >
+      <label htmlFor="name"  >السؤال</label>
+      <textarea rows='4' id="quest" name="quest" type="text" required />
+      <label htmlFor="name" className="m-auto font-bold" >اختر قسمها</label>
+      <select name="category" id="category"  required className="bg-pri-color   rounded-xl m-auto w-3/6 " >
         <option value="salat">الصلاة</option>
         <option value="swam">الصوم</option>
         <option value="haj">الحج</option>
         <option value="zakat">الزكاة</option>
         <option value="other">غيرها</option>
       </select>
-      <button  type="submit">Register</button>
+      <button  type="submit" className="bg-sec-color font-bold m-auto rounded-xl mt-7 w-3/6 text-white">اسأل</button>
     </form>
+    </div>
   )
 }

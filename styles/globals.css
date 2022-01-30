@@ -81,4 +81,8 @@ footer{
 @tailwind components;
 @tailwind utilities;
 
+.form > * {
+  padding : 10px;
+}
+
  

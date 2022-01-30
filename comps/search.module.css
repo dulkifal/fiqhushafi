@@ -1,7 +1,13 @@
 .container {
   position: relative;
+  margin-right: auto !important;
+
  
 }
+
+/* .search_container__COjBL{
+  margin-right: auto;
+} */
 
 .search {
   border: 1px solid #666;
@@ -10,8 +16,8 @@
   padding: 10px;
   border-radius: 5px;
   width: 100%;
-
  }
+ 
 .result-item {
   color: #eee;
   margin: 0;

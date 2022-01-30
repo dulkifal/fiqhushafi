@@ -1,7 +1,7 @@
 const Footer = () => {
     return ( 
         <footer className="bg-black text-white">
-            Copyright 2021 Dulkifal
+            Copyright 2022 | Dulkifal
            
         </footer>
      );
