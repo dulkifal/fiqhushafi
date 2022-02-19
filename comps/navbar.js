@@ -7,12 +7,12 @@ import Search from './search';
 const Navbar = () => {
     return (
         <  >
-         <div className='container h-5.5 bg-pri-color '>
+         <div className='w-1/1 h-5.5 bg-pri-color '>
 
            <h1 className='p-5 text-5xl text-center font-extrabold '>فقه الشافعية</h1>
          </div>
     
-        <nav dir='rtl' className='flex space-x-4 bg-ter-color  '>
+        <nav dir='rtl' className=' flex space-x-4 bg-ter-color  '>
             
            <Link href="/"><a className='hover:bg-sec-color hover:text-white px-3 py-2 rounded-md'>الرئيسية</a></Link>
            <Link href="/fatwas"><a className='hover:bg-sec-color hover:text-white px-3 py-2 rounded-md'>المقالاة</a></Link>

@@ -10,7 +10,7 @@ import Link from 'next/link'
 import ImageSlider from '../comps/imageSlider'
 
 
-
+//font sekkal majalla
 
 export default function Home() {
 
