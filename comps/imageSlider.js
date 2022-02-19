@@ -26,10 +26,11 @@ const ImageSlider = ( ) => {
 
   return (
     images.length > 0 && (
-      <div className="m-auto flex w-11/12">
-        <button onClick={slideLeft}>{"<"}</button>
-        <img src={images[index]} alt={index} />
-        <button onClick={slideRight}>{">"}</button>
+      <div className="m-auto relative h-130 w-11/12">          
+        <button className="absolute w-12 bg-sec-color h-20 left-0 transform -translate-y-1/2 top-1/2" onClick={slideLeft}>{"<"}</button>
+        
+        <button className="absolute w-12 bg-sec-color h-20 right-0 transform -translate-y-1/2 top-1/2" onClick={slideRight}>{">"}</button>
+        <img className="w-full h-full object-cover" src={images[index]} alt={index} />
       </div>
     )
   );

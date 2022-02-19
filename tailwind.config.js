@@ -4,7 +4,9 @@ module.exports = {
     "./comps/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      innerHeight: [130]
+    },
     colors: {
       "pri-color": "#9AD0EC",
       "sec-color": "#1572A1",
