@@ -28,7 +28,7 @@ const NewNote = () => {
      
     const baseUrl =  'http://localhost:3000';
   
-    axios.post(`${baseUrl}/api/notes`, form).then(({ data }) => { console.log(data) });
+    axios.post(`/api/notes`, form).then(({ data }) => { console.log(data) });
     document.formName.reset()
     
      
@@ -64,7 +64,7 @@ const NewNote = () => {
 
   return (
     <div>
-      <h1  >Add Answers</h1>
+      <h1  >Add  Answers</h1>
       <div className={styles.form}>
         {
           isSubmitting ? <h1>loading</h1> :

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Majalla';
+  src: url('/fonts/Majallab.ttf');
+}
+* {
+  font-family: 'Majalla';
+  font-size: 20px;
+}

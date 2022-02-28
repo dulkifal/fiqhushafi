@@ -1,5 +1,6 @@
 import Layout from '../comps/layout'
 import '../styles/globals.css'
+import '../styles/font.css'
  
  
 

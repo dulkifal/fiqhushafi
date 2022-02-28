@@ -77,6 +77,8 @@ footer{
   display: inline-block;
   margin-bottom: 7px;
 } 
+@import url('/public/fonts/stylesheet.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

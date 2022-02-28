@@ -12,7 +12,7 @@ const Navbar = () => {
            <h1 className='p-5 text-5xl text-center font-extrabold '>فقه الشافعية</h1>
          </div>
     
-        <nav dir='rtl' className=' flex space-x-4 bg-ter-color  '>
+        <nav dir='rtl' className=' flex space-x-4 '>
             
            <Link href="/"><a className='hover:bg-sec-color hover:text-white px-3 py-2 rounded-md'>الرئيسية</a></Link>
            <Link href="/fatwas"><a className='hover:bg-sec-color hover:text-white px-3 py-2 rounded-md'>المقالاة</a></Link>
