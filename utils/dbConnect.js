@@ -1,12 +1,14 @@
 import mongoose from 'mongoose'
 const connection = {}
 
+let prod=process.env.NODE_ENV === 'production'
+
  async function dbConnect() {
     
   if(connection.isConnected) {
     return;
   }
-   const db = await mongoose.connect(process.env.mongo, {
+   const db = await mongoose.connect(prod?process.env.mongo123:process.env.mongo, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
