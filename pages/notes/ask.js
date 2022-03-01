@@ -23,7 +23,7 @@ export default function Form() {
   }
 
   return (
-    <div className='bg-pri-color p-3  '>
+    <div className='bg-on-primary-light p-3  '>
     <form onSubmit={registerUser} dir="rtl" className="flex flex-col mb-1 py-4 m-auto bg-ter-color w-1/2 form px-5">
       <label htmlFor="name">الأسم</label>
       <input id="name" name="name" type="text" required  className=""/>
