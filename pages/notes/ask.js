@@ -27,8 +27,8 @@ export default function Form() {
     <form onSubmit={registerUser} dir="rtl" className="flex flex-col mb-1 py-4 m-auto bg-ter-color w-1/2 form px-5">
       <label htmlFor="name">الأسم</label>
       <input id="name" name="name" type="text" required  className=""/>
-      <label htmlFor="name">Email</label>
-      <input id="email" name="email" type="text" required />
+      <label  htmlFor="name">Email</label>
+      <input dir="ltr" id="email" name="email" type="text" required />
       <label htmlFor="name">رقم الهاتف</label>
       <input id="phone" name="phone" type="text" required />
       <label htmlFor="name"  >السؤال</label>
