@@ -6,9 +6,9 @@ export const getServerSideProps  = async ({req}) => {
     const protocol = req.headers['x-forwarded-proto'] || 'http'
     const baseUrl = req ? `${protocol}://${req.headers.host}` : ''
 
-    const res = await fetch(`${baseUrl}/json.json`);
+    const res = await fetch(`${baseUrl}/out.json`);
     const data = await res.json()
-    console.log(baseUrl);
+    console.log( 'hhh' , baseUrl);
      return {
         props: { fatwas: data }
     }
@@ -22,11 +22,9 @@ const Fatwas = ({ fatwas } ) => {
           {fatwas && fatwas.map(fatwa => (
                     // eslint-disable-next-line react/jsx-key
                     <div className={styles.single }>
-                    
                        
-                           
-                            <h2>{fatwa.q}</h2>
-                        <p>{fatwa.p}</p>
+                            <h2>{fatwa.message}</h2>
+                        <p>{fatwa.id}</p>
                         
                     </div>
               )) } 
