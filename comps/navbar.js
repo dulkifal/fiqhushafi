@@ -35,22 +35,23 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-               <h1>فقه الشافعي</h1>
+               <h1 className='w-fit my-2 mx-3'>فقه الشافعي</h1>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                      key={item.name}
+                      href={item.href}
+                      className={classNames(
+                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:bg-green-1',
+                        'px-2 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
+                        >
+                         {item.name}
                       </a>
                     ))}
+                  <Search/>
                   </div>
                 </div>
               </div>
@@ -64,12 +65,12 @@ export default function Example() {
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:bg-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                key={item.name}
+                as="a"
+                href={item.href}
+                className={classNames(
+                  item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:bg-white',
+                  'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
