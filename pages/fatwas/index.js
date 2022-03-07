@@ -6,7 +6,7 @@ export const getServerSideProps  = async ({req}) => {
     const protocol = req.headers['x-forwarded-proto'] || 'http'
     const baseUrl = req ? `${protocol}://${req.headers.host}` : ''
 
-    const res = await fetch(`${baseUrl}/out.json`);
+    const res = await fetch(`${baseUrl}/parsed.json`);
     const data = await res.json()
     console.log( 'hhh' , baseUrl);
      return {
@@ -17,14 +17,16 @@ export const getServerSideProps  = async ({req}) => {
 const Fatwas = ({ fatwas } ) => {
      
     return (
-        <div>
+        <div className='p-6'>
             <h1> All fatwas</h1>
           {fatwas && fatwas.map(fatwa => (
                     // eslint-disable-next-line react/jsx-key
-                    <div className={styles.single }>
-                       
-                            <h2>{fatwa.message}</h2>
+                    <div className={styles.single } >
+                       <div className='p-6'>
+
+                            <h2>{fatwa.msg}</h2>
                         <p>{fatwa.id}</p>
+                       </div>
                         
                     </div>
               )) } 
@@ -33,3 +35,5 @@ const Fatwas = ({ fatwas } ) => {
 }
 
 export default Fatwas; 
+
+ 
