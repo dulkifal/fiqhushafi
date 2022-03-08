@@ -35,8 +35,17 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-               <h1 className='w-fit my-2 mx-3'>فقه الشافعي</h1>
+               <div className='w-1/3 text-xl' >
+
+               <h1 className=''>فقه الشافعي</h1>
+               </div>
+               <div className='sm:items-center sm:w-36'>
+
+                   <Search/>
+               </div>
                 <div className="hidden sm:block sm:ml-6">
+                  <div className=''> 
+                  </div>
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
@@ -51,7 +60,7 @@ export default function Example() {
                          {item.name}
                       </a>
                     ))}
-                  <Search/>
+                
                   </div>
                 </div>
               </div>
