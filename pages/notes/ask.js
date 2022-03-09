@@ -24,7 +24,7 @@ export default function Form() {
 
   return (
     <div className=' p-3  '>
-    <form onSubmit={registerUser} dir="rtl" className="flex flex-col mb-1 py-4 m-auto bg-blue-100 rounded w-1/2 form px-5">
+    <form onSubmit={registerUser} dir="rtl" className="flex flex-col mb-1 py-4 m-auto bg-blue-100 rounded w-full max-w-2xl form px-5">
       <label htmlFor="name">الأسم</label>
       <input id="name" name="name" type="text" required  className=""/>
       <label  htmlFor="name">Email</label>
