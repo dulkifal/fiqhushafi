@@ -16,7 +16,8 @@ module.exports = {
       "black": "#000",
       "ter-color": "#EFDAD7",
       "green-1": "#35D1BE",
-
+       "trans": "#00000000",
+       "backor": "#fbf8ef",
 
 
 

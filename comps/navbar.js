@@ -20,7 +20,7 @@ export default function Example() {
   return (
     <>
    
-    <Disclosure as="nav" dir='rtl' className="bg-on-primary-light">
+    <Disclosure as="nav" dir='rtl' className="bg-primary-container-light">
       {({ open }) => (
         <>
           <div className="w-full mx-auto px-2 sm:px-6 lg:px-8">
