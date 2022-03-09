@@ -23,8 +23,8 @@ export default function Form() {
   }
 
   return (
-    <div className='bg-on-primary-light p-3  '>
-    <form onSubmit={registerUser} dir="rtl" className="flex flex-col mb-1 py-4 m-auto bg-ter-color w-1/2 form px-5">
+    <div className=' p-3  '>
+    <form onSubmit={registerUser} dir="rtl" className="flex flex-col mb-1 py-4 m-auto bg-blue-100 rounded w-1/2 form px-5">
       <label htmlFor="name">الأسم</label>
       <input id="name" name="name" type="text" required  className=""/>
       <label  htmlFor="name">Email</label>
@@ -41,7 +41,7 @@ export default function Form() {
         <option value="zakat">الزكاة</option>
         <option value="other">غيرها</option>
       </select>
-      <button  type="submit" className="bg-sec-color font-bold m-auto rounded-xl mt-7 w-3/6 text-white">اسأل</button>
+      <button  type="submit" className="bg-blue-200 font-bold m-auto rounded-xl mt-7 w-3/6 text-green">اسأل</button>
     </form>
     </div>
   )
