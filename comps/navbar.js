@@ -20,14 +20,14 @@ export default function Example() {
   return (
     <>
    
-    <Disclosure as="nav" dir='rtl' className="bg-green-300 text-blue-600" >
+    <Disclosure as="nav" dir='rtl' className="bg-green-500 text-blue-600" >
       {({ open }) => (
         <>
           <div className="w-full mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center text-2xl justify-center p-2 rounded-md text-white hover:text-white hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
             
                   {open ? (
                     <IoIosClose/>) : (
@@ -35,7 +35,7 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-               <div className='w-1/3 text-xl' >
+               <div className='w-1/3 text-4xl' >
 
                <h1 className=''>فقه الشافعي</h1>
                </div>
