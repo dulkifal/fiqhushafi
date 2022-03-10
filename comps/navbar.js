@@ -39,21 +39,20 @@ export default function Example() {
 
                <h1 className=''>فقه الشافعي</h1>
                </div>
-               <div className='sm:items-center sm:w-36'>
+               <div className='w-full sm:items-center sm:w-36'>
 
                    <Search/>
                </div>
                 <div className="hidden sm:block sm:ml-6">
-                  <div className=''> 
-                  </div>
-                  <div className="flex space-x-4">
+                  
+                  <div className="flex space-x-4 ">
                     {navigation.map((item) => (
                       <a
                       key={item.name}
                       href={item.href}
                       className={classNames(
                         item.current ? 'bg-gray-900 text-white' : 'text-blue-600 hover:bg-gray-700 hover:bg-green-100 m-2',
-                        'px-2 py-2 rounded-md text-sm font-medium'
+                        'px-2 py-2 rounded-md text-2xl font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                         >
@@ -79,7 +78,7 @@ export default function Example() {
                 href={item.href}
                 className={classNames(
                   item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:bg-white',
-                  'block px-3 py-2 rounded-md text-base font-medium'
+                  'block px-3 py-2 rounded-md text-2xl font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
