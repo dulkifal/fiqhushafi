@@ -114,6 +114,11 @@ export default function Home() {
                             </a>
                             </div>
                     </div>
+                    <div className="bg-white py-8 px-4 shadow-lg rounded-lg">
+                        <h1>contact us</h1>
+                        </div>
+
+                        
                 </div>
             </div>
 
