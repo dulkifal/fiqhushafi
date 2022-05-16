@@ -39,7 +39,7 @@ export default function Example() {
 
                <h1 className=''>فقه الشافعي</h1>
                </div>
-               <div className='w-full sm:items-center sm:w-36'>
+               <div className=' sm:items-center w-36'>
 
                    <Search/>
                </div>
