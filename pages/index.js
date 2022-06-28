@@ -116,6 +116,15 @@ export default function Home() {
                     </div>
                     <div className="bg-white py-8 px-4 shadow-lg rounded-lg">
                         <h1>contact us</h1>
+                        <p>
+                        Apply to Us <br/>
+Darul Huda Islamic University<br/>
+Hidaya Nagar, Chemmad<br/>
+Tirurangadi PO, Malappuram Dist<br/>
+Pin: 676306, Kerala, India<br/>
+0494-2463155, 0494-2460575, 0494-2464502<br/>
+
+                        </p>
                         </div>
 
                         

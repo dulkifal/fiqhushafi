@@ -8,7 +8,7 @@ const ind = async (req, res) => {
     switch (method) {
         case 'GET':
             try {
-                
+                  
                 const notes = await Note.find();
                 res.status(200).json( notes );
               } catch (error) {

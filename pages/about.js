@@ -22,9 +22,9 @@ Department of Fiqh and Usul Al-Fiqh is one of the sister departments under the K
 There is a lecturing  series of prolific and proficient faculties on the core papers and some elective specialization papaers, it promotes the scholars to pursue the aim-oriented education and gain valuable skills to face and debate with the contemporary and complicated issues of Islamic jurisprudence and conduct many relevant and content oriented social and propagational creative programmes like Al Faqeeh quiz competition, Ijaba course, valuable discussions at Multhaqa Fuqahah, seminars etc. The graduated scholar can achieve the jurisprudential competitive experience and can introduce and present the contemporary Islamic jurisprudential issues with eligible and accurate arguments and evidence from the law text and jurisprudential references.
 In this short span of time, there has been a lot of scholars, from Kerala and outside, who graduated from the faculty. It advances with swift steps towards academic excellence through Sharia programmes and other associated agendas.
 Program Structure (Semester wise structure/ core courses/ Electives/General Paper)-  
-The course is programmed with two modes:
-1)Course only
-2)Course with Thesis
+The course is programmed with two modes:<br/>
+1)Course only<br/>
+2)Course with Thesis<br/>
 Course only mode is to prepare a project in department related subjects or issues,
  those who selected course only mode have completed eight Specialisation papers and
   they have two options with two minor projects for two year or one major project for two years.
@@ -74,17 +74,17 @@ Islamic banking
 Currency in Islam
 Zakat and inheritance
 Economics of waqf
-
-Assessment and Grading (Summative & Formative)
+<br/>
+Assessment and Grading  <br/>
 Continuous assessment and guiding will be valuated through semester exams, continuous and Comprehensive Evaluation (CCE), presentation and Viva Voce as well as research guidelines.
-
-Student Life
+<br/>
+Student Life <br/>
 The department programmes like Ijaba course, Al faqeeh competition and etc encourage students to build their student life with the connection to community, diverse student population and their committees create vibrant community life, our faculty members' abilities, and academic resources, like department library and University library which have massive number of kitabs in Islamic jurisprudence, create a good environment of leaning,
-
-Financial Aid 
+<br/>
+Financial Aid <br/>
 Dep. Of Fiqh and Usul Al-Fiqh in Darul Huda Islamic University has an explicit commitment towards supporting all its students for their bright and vibrant future as it provides the full scholarship containing food and accommodations for all deserving students. 
-
-Student Support
+<br/>
+Student Support <br/>
 The department aims to ensure that scholars are satisfied, and they can achieve the most destination they desired and most of the experiences of student life in Darul Huda Islamic University. There are department programmes to participate all students in the personal development programmes. The programmes and activities are systemized and structured. The department committee initialise skill developing programmes and prepare all wanted facilities for the developments of the personal ambitions.
 Khafila
 Khafila is a study tour of the faculty students that intends to learn the jurisprudential civilizations and visit jurisprudential centres. The tour includes visiting of the contemporary jurists in the locality.
@@ -99,30 +99,24 @@ The conferences analyze the contemporary issues that rise by the passing of time
 Ijaba
 It is a study course for the public to make them familiar with Sharia rules and to equip them to practice daily compulsory duties within a short period of time. Until now, hundreds of people have benefited from this course.
 The department spent time to ensure the facilities for the personal developments, career guidance and tutoring and mentoring
-
-Academic Support  
-Tutorial classes
-Training classes
+<br/>
+Academic Support  <br/>
+Tutorial classes <br/>
+Training classes <br/>
 Conducting table discussions, seminars, and other different programmes on the contemporary and relevant issues
 Providing good connections and links with international Islamic universities
-
-Faculty Members
+<br/>
+Faculty Members<br/>
 Members of our faculty are accomplished academicians, scholars, researchers, teachers, and agents of social transformation. 
 The faculty members provide a vibrant classroom learning environment through a range of pedagogies that encourage dialogue and build critical thinking and self-learning abilities. 
 All faculty members provide academic and spiritual mentoring support to the students beyond the classrooms.
-
-Placement & Career Opportunities
+<br/>
+Placement & Career Opportunities<br/>
 Department of Fiqh and Usul al Fiqh produce capable and genius jurisprudential reformist and innovative research scholars
 *
 Graduates are eligible to be appointed as members of international and national Fatwa council and research centres and as professor, HoD and lectures of Fiqh and related departments in international, national and Darul Huda affliated institutions
 *
 There are wide opportunities for the graduates for the higher studies as the research scholars in international islamic universities on the contemporary jurisprudential subjects
-Apply to Us
-Darul Huda Islamic University
-Hidaya Nagar, Chemmad
-Tirurangadi PO, Malappuram Dist
-Pin: 676306, Kerala, India
-0494-2463155, 0494-2460575, 0494-2464502
 
 
 </p>

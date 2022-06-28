@@ -20,14 +20,14 @@ export default function Example() {
   return (
     <>
    
-    <Disclosure as="nav" dir='rtl' className="bg-green-500 text-blue-600" >
+    <Disclosure as="nav" dir='rtl' className="bg-white-500 text-blue-600" >
       {({ open }) => (
         <>
           <div className="w-full mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center text-2xl justify-center p-2 rounded-md text-white hover:text-white hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center text-2xl justify-center p-2 rounded-md text-black  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
             
                   {open ? (
                     <IoIosClose/>) : (
@@ -37,7 +37,7 @@ export default function Example() {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                <div className='w-1/3 text-4xl' >
 
-               <h1 className=''>فقه الشافعي</h1>
+               <h1 className=''>الفقه الشافعي</h1>
                </div>
                <div className=' sm:items-center w-36'>
 
@@ -51,7 +51,7 @@ export default function Example() {
                       key={item.name}
                       href={item.href}
                       className={classNames(
-                        item.current ? 'bg-gray-900 text-white' : 'text-blue-600 hover:bg-gray-700 hover:bg-green-100 m-2',
+                        item.current ? 'text-blue-600' : 'text-blue-600  m-2',
                         'px-2 py-2 rounded-md text-2xl font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -77,7 +77,7 @@ export default function Example() {
                 as="a"
                 href={item.href}
                 className={classNames(
-                  item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:bg-white',
+                  item.current ? 'bg-gray-900 text-white' : '',
                   'block px-3 py-2 rounded-md text-2xl font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
