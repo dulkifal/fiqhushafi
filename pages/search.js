@@ -42,7 +42,7 @@ export default function Search() {
   const onFocus = useCallback(() => {
     setActive(true)
     window.addEventListener('click', onClick)
-  }, )
+  })
 
   const onClick = useCallback((event) => {
     if (searchRef.current && !searchRef.current.contains(event.target)) {

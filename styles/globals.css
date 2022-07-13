@@ -5,7 +5,7 @@
 }
 
 body{
-  background: #f2f2f2;
+  background: #fff;
   color: #333;
   /* font-family: ""; */
 
@@ -20,7 +20,8 @@ a{
   margin: 0 auto;
 }
 nav{
-  margin: 10px auto 5px;
+  font-family: andulus;
+  margin: 1px ;
   padding: 10px 0;
   display: flex;
   justify-content: flex-end;

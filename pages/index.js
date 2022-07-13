@@ -1,5 +1,3 @@
-
-
 import Head from 'next/head'
 import Image from 'next/image'
 import Footer from '../comps/footer'
@@ -8,22 +6,16 @@ import Navbar from '../comps/navbar'
 import Link from 'next/link'
 
 import ImageSlider from '../comps/imageSlider'
-
-
 //font sekkal majalla
 
 export default function Home() {
 
-
-
-
     return (
         <>
+            <dir className="2xl:container 2xl:mx-auto 2xl:px-0 py-0 px-10">
+
             <ImageSlider />
-
-
-
-
+        </dir>
 
             <Head>
                 <title>Fatwas</title>
@@ -112,22 +104,22 @@ export default function Home() {
                                     <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
                                 </svg>
                             </a>
-                            </div>
+                        </div>
                     </div>
                     <div className="bg-white py-8 px-4 shadow-lg rounded-lg">
                         <h1>contact us</h1>
                         <p>
-                        Apply to Us <br/>
-Darul Huda Islamic University<br/>
-Hidaya Nagar, Chemmad<br/>
-Tirurangadi PO, Malappuram Dist<br/>
-Pin: 676306, Kerala, India<br/>
-0494-2463155, 0494-2460575, 0494-2464502<br/>
+                            Apply to Us <br />
+                            Darul Huda Islamic University<br />
+                            Hidaya Nagar, Chemmad<br />
+                            Tirurangadi PO, Malappuram Dist<br />
+                            Pin: 676306, Kerala, India<br />
+                            0494-2463155, 0494-2460575, 0494-2464502<br />
 
                         </p>
-                        </div>
+                    </div>
 
-                        
+
                 </div>
             </div>
 

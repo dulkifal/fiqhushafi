@@ -1,0 +1,35 @@
+{
+  "resources": [
+    {
+      "title": "قسم الفقه وأصوله",
+      "link": "https://twitter.com/kendalmintcode",
+      "imageUrl": "/photo1.jpg"
+    },
+    {
+      "title": "قسم الفقه وأصوله",
+      "link": "https://www.facebook.com/kendal.mint.code",
+      "imageUrl": "/photo2.jpg"
+    },
+    
+    {
+      "title": "قسم الفقه وأصوله ",
+      "link": "https://twitter.com/kendalmintcode",
+      "imageUrl": "https://placeimg.com/300/300/tech"
+    },
+    {
+      "title": "قسم الفقه وأصوله",
+      "link": "https://twitter.com/kendalmintcode",
+      "imageUrl": "/photo1.jpg"
+    },
+    {
+      "title": "قسم الفقه وأصوله",
+      "link": "https://www.facebook.com/kendal.mint.code",
+      "imageUrl": "/photo2.jpg"
+    },
+    {
+      "title": "قسم الفقه وأصوله ",
+      "link": "https://twitter.com/kendalmintcode",
+      "imageUrl": "https://placeimg.com/300/300/tech"
+    }
+  ]
+}
