@@ -8,7 +8,6 @@ export default function Form() {
         email: event.target.email.value,
         phone: event.target.phone.value,
         quest: event.target.quest.value,
-        category: event.target.category.value,
 
       }),
       headers: {
@@ -23,25 +22,18 @@ export default function Form() {
   }
 
   return (
-    <div className=' p-3  '>
-    <form onSubmit={registerUser} dir="rtl" className="flex flex-col mb-1 py-4 m-auto bg-blue-100 rounded w-full max-w-2xl form px-5">
-      <label htmlFor="name">الأسم</label>
-      <input id="name" name="name" type="text" required  className=""/>
-      <label  htmlFor="name">Email</label>
-      <input dir="ltr" id="email" name="email" type="text" required />
-      <label htmlFor="name">رقم الهاتف</label>
-      <input id="phone" name="phone" type="text" required />
-      <label htmlFor="name"  >السؤال</label>
-      <textarea rows='4' id="quest" name="quest" type="text" required />
-      <label htmlFor="name" className="m-auto font-bold" >اختر قسمها</label>
-      <select name="category" id="category"  required className="bg-pri-color   rounded-xl m-auto w-3/6 " >
-        <option value="salat">الصلاة</option>
-        <option value="swam">الصوم</option>
-        <option value="haj">الحج</option>
-        <option value="zakat">الزكاة</option>
-        <option value="other">غيرها</option>
-      </select>
-      <button  type="submit" className="bg-blue-200 font-bold m-auto rounded-xl mt-7 w-3/6 text-green">اسأل</button>
+    <div className='w-full max-w-xl m-auto '>
+    <form onSubmit={registerUser} dir="rtl" className="flex flex-col mb-4 py-4 m-auto shadow-md bg-gray-100 rounded px-5">
+        <label htmlFor="name" className="block text-blue-900 text-sm font-bold mb-2">الإسم</label>
+        <input id="name" name="name" type="text" required className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+        <label htmlFor="name" className="text-blue-900">Email</label>
+        <input dir="ltr" id="email" name="email" type="text" required className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+        <label htmlFor="name" className="text-blue-900">رقم الهاتف</label>
+        <input id="phone" name="phone" type="text" required className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+        <label htmlFor="name" className="text-blue-900">السؤال</label>
+        <textarea rows='4' id="quest" name="quest" type="text" required className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+      
+      <button  type="submit" className="bg-green-400 font-bold m-auto rounded mt-7 w-1/6 h-7 text-green">اسأل</button>
     </form>
     </div>
   )

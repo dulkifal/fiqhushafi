@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
-import styles from './search.module.css'
 import axios from "axios"
 
 export default function Search() {
@@ -58,12 +57,12 @@ export default function Search() {
     getBooks();
   }, []);
   return (
-    <div
-      className={styles.container}
+    <div dir='rtl'
+      className="flex flex-col items-center justify-center   "
       ref={searchRef}
     >
       <input
-        className={styles.search}
+        className="  w-1/2 h-10 p-2  border-2  rounded-lg focus:outline-none focus:border-blue-900"
         onChange={(e) => handleChange(e)}
         onFocus={onFocus}
         placeholder='البحث'
@@ -71,7 +70,7 @@ export default function Search() {
         value={wordEntered}
       />
       {filteredData.length > 0 && (
-        <div className="data-results">
+        <div className=" ">
           {filteredData.length > 0 ? (
             <small className='result-count'>{filteredData.length} results</small>
           ) : (
