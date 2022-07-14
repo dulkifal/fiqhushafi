@@ -11,10 +11,10 @@ const NotFound = () => {
         }, 3000);
     }, [router])
     return (
-        <div className="not-found">
-            <h1>sorrey this page not avialable</h1>
+        <div className="not-found" dir='rtl'>
+            <h1>آسف هذه الصفحة غير متوفرة</h1>
             
-            <p>Go back to home <Link href="/"><a>HomePage</a></Link> </p>
+            <p>العودة الى الصفحة  <Link href="/"><a> الرئيسية</a></Link> </p>
         </div>
     );
 }

@@ -7,7 +7,7 @@ export const getServerSideProps  = async ({req}) => {
 
     const res = await fetch(`${baseUrl}/parsed.json`);
     const data = await res.json()
-    console.log( 'hhh' , baseUrl);
+    
      return {
         props: { fatwas: data }
     }
