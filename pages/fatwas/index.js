@@ -1,6 +1,5 @@
 import styles from '../../styles/fatwas.module.css'
 import Link from 'next/link';
-import { server } from '../../next.config';
 
 export const getServerSideProps  = async ({req}) => {
     const protocol = req.headers['x-forwarded-proto'] || 'http'

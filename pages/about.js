@@ -101,15 +101,15 @@ It is a study course for the public to make them familiar with Sharia rules and 
 The department spent time to ensure the facilities for the personal developments, career guidance and tutoring and mentoring
 <br/>
 Academic Support  <br/>
-Tutorial classes <br/>
-Training classes <br/>
+Tutorial classNamees <br/>
+Training classNamees <br/>
 Conducting table discussions, seminars, and other different programmes on the contemporary and relevant issues
 Providing good connections and links with international Islamic universities
 <br/>
 Faculty Members<br/>
 Members of our faculty are accomplished academicians, scholars, researchers, teachers, and agents of social transformation. 
-The faculty members provide a vibrant classroom learning environment through a range of pedagogies that encourage dialogue and build critical thinking and self-learning abilities. 
-All faculty members provide academic and spiritual mentoring support to the students beyond the classrooms.
+The faculty members provide a vibrant classNameroom learning environment through a range of pedagogies that encourage dialogue and build critical thinking and self-learning abilities. 
+All faculty members provide academic and spiritual mentoring support to the students beyond the classNamerooms.
 <br/>
 Placement & Career Opportunities<br/>
 Department of Fiqh and Usul al Fiqh produce capable and genius jurisprudential reformist and innovative research scholars
@@ -121,32 +121,32 @@ There are wide opportunities for the graduates for the higher studies as the res
 
 </p>
          </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-header">
+            <div className="col-md-3">
+                <div className="card">
+                    <div className="card-header">
                         <h4>Quick Links</h4>
                     </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="list-unstyled quick-links">
+                    <div className="card-body">
+                        <div className="row">
+                            <div className="col-md-6">
+                                <ul className="list-unstyled quick-links">
 
-                                    <li><a href="index.php"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                                    <li><a href="about.php"><i class="fa fa-angle-double-right"></i>About Us</a></li>
-                                    <li><a href="academics.php"><i class="fa fa-angle-double-right"></i>Academics</a></li>
-                                    <li><a href="admission.php"><i class="fa fa-angle-double-right"></i>Admission</a></li>
-                                    <li><a href="faculty.php"><i class="fa fa-angle-double-right"></i>Faculty</a></li>
-                                    <li><a href="contact.php"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+                                    <li><a href="index.php"><i className="fa fa-angle-double-right"></i>Home</a></li>
+                                    <li><a href="about.php"><i className="fa fa-angle-double-right"></i>About Us</a></li>
+                                    <li><a href="academics.php"><i className="fa fa-angle-double-right"></i>Academics</a></li>
+                                    <li><a href="admission.php"><i className="fa fa-angle-double-right"></i>Admission</a></li>
+                                    <li><a href="faculty.php"><i className="fa fa-angle-double-right"></i>Faculty</a></li>
+                                    <li><a href="contact.php"><i className="fa fa-angle-double-right"></i>Contact Us</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-6">
-                                <ul class="list-unstyled quick-links">
-                                    <li><a href="gallery.php"><i class="fa fa-angle-double-right"></i>Gallery</a></li>
-                                    <li><a href="research.php"><i class="fa fa-angle-double-right"></i>Research</a></li>
-                                    <li><a href="career.php"><i class="fa fa-angle-double-right"></i>Career</a></li>
-                                    <li><a href="news.php"><i class="fa fa-angle-double-right"></i>News</a></li>
-                                    <li><a href="events.php"><i class="fa fa-angle-double-right"></i>Events</a></li>
-                                    <li><a href="contact.php"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+                            <div className="col-md-6">
+                                <ul className="list-unstyled quick-links">
+                                    <li><a href="gallery.php"><i className="fa fa-angle-double-right"></i>Gallery</a></li>
+                                    <li><a href="research.php"><i className="fa fa-angle-double-right"></i>Research</a></li>
+                                    <li><a href="career.php"><i className="fa fa-angle-double-right"></i>Career</a></li>
+                                    <li><a href="news.php"><i className="fa fa-angle-double-right"></i>News</a></li>
+                                    <li><a href="events.php"><i className="fa fa-angle-double-right"></i>Events</a></li>
+                                    <li><a href="contact.php"><i className="fa fa-angle-double-right"></i>Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -155,7 +155,7 @@ There are wide opportunities for the graduates for the higher studies as the res
             </div>
         </div>
     </div>
-    <div class="footer-copyright">
+    <div className="footer-copyright">
         <p>Copyright © 2018 Darul Huda. All rights reserved. Developed by 
             <a > ......</a></p>
     </div>
