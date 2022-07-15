@@ -18,7 +18,7 @@ export default function Home() {
             <div className="py-8 grid md:grid-cols-2" dir='rtl'>
                 {
                     Array.from(Array(6).keys()).map(i => (
-                        <div className=" items-center justify-center   m-3">
+                        <div className=" items-center justify-center   m-3" key={i}>
 
                             <div className=" bg-white p-6 shadow-md rounded">
                                 <div className="flex items-center border-b border-gray-200 pb-6">

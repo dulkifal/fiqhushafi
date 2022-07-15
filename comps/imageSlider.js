@@ -107,7 +107,7 @@ const ImageSlider = ( ) => {
               return (
                 <div
                   key={index}
-                  className="carousel-item text-center relative w-64 h-64 snap-start"
+                  className="carousel-item hover:scale-125 text-center relative w-64 h-64 snap-start"
                 >
                   <a
                     href={resource.link}
