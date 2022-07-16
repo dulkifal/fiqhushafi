@@ -38,8 +38,10 @@ export default function Example() {
                 <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
 
                   {/* logo */}
-                  <span className="text-xl font-bold tracking-tight text-blue-900 md:text-2xl md:m-3">الفقه
+                <a href='/admin'>
+                    <span className="text-xl font-bold tracking-tight text-blue-900 md:text-2xl md:m-3">الفقه
                     الشافعي</span>
+                  </a>
 
                   {/* <div className=' sm:items-center w-36'>
 

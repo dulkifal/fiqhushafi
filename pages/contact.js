@@ -3,7 +3,6 @@ import styles from '../styles/Home.module.css'
 
 export default function App() {
  
-
   const [query, setQuery] = useState({
     title: '', descri: ''
   });

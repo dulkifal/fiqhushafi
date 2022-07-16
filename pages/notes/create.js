@@ -1,6 +1,4 @@
- 
-import { useState, useEffect, createContext } from "react";
-import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 import styles from '../../styles/fatwas.module.css'
 import axios from "axios";
 
@@ -8,15 +6,12 @@ const NewNote = () => {
   const [form, setform] = useState({ title: '', descri: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});
-  const router = useRouter();
 
   useEffect(() => {
 
     if (isSubmitting) {
 
       if (Object.keys(errors).length === 0) {
-        // createNote();
-        // createContext();
 
       } else {
         setIsSubmitting(false);
@@ -24,16 +19,11 @@ const NewNote = () => {
     }
   }, [errors]);
 
-  const createNote  = async () => {
-     
-    const baseUrl =  'http://localhost:3000';
-  
+  const createNote = async () => {
+    
     axios.post(`/api/notes`, form).then(({ data }) => { console.log(data) });
     document.formName.reset()
-    
-     
   }
- 
 
   const handleSubmit = (e) => {
     e.preventDefualt();
@@ -69,7 +59,6 @@ const NewNote = () => {
         {
           isSubmitting ? <h1>loading</h1> :
 
-
             <form name="formName" onSubmit={handleSubmit} className={styles.form}>
 
               <input name="title"
@@ -83,9 +72,8 @@ const NewNote = () => {
                   } : null}>
               </input>
 
-
               <textarea name="descri"
-                id="" cols="5" rows="5"
+                 cols="5" rows="5"
                 placeholder="Answer"
                 required
                 onChange={handleChange}
@@ -107,5 +95,5 @@ const NewNote = () => {
       </div>
     </div>
   )
-      }
+}
 export default NewNote;

@@ -1,17 +1,32 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import mongoose from 'mongoose'
-import { Q } from '../../utils/modals';
+import dbConnect from '../../utils/dbConnect';
+import Question from '../../utils/questionSchema';
+dbConnect();
 
+const ind = async (req, res) => {
+  const { method } = req;
 
+  switch (method) {
+    case 'GET':
+      try {
 
+        const questions = await Question.find();
+        res.status(200).json(questions);
+      } catch (error) {
+        res.status(400).json({ success: false });
+      } break;
 
- 
-//const mongoose = require('mongoose');
-
-export default async function handler(req, res) {
-  mongoose.connect('mongodb://localhost:27017/fatwaweb');
-  
-  let ques=await Q.find({})
-//  Q.insertMany([{q:'daafasdfaf',a:'asdfasdf',p:'asdfasdf'}]).then((err,res) => {console.log(res,err);})
-  res.status(200).json(ques)
+    case 'POST':
+      try {
+        console.log(req.body);
+        console.log(req.body.name);
+        const  question = await Question.create(req.body);
+        res.status(201).json(question);
+      } catch (error) {
+        res.status(400).json(error);
+      } break;
+    default:
+      res.status(400).json({ success: false });
+      break;
+  }
 }
+module.exports = ind;
