@@ -58,7 +58,10 @@ export default function adminPanel() {
   <button onClick={e => {
     e.preventDefault();
     localStorage.setItem('password', password.password);
-    setAdmin(true);
+    if(password.password === 'admin'){
+
+      setAdmin(true);
+    }
     
   }}
   type="submit">submit</button>
