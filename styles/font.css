@@ -11,3 +11,6 @@
   font-family: 'Majalla';
   font-size: 20px;
 }
+#__next>div>nav>div>div>div.flex-1.flex.items-center.justify-center.sm\:items-stretch.sm\:justify-start>a:nth-child(1)>span{
+  font-family: 'Andalus';
+}

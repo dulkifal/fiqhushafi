@@ -39,7 +39,7 @@ export default function Example() {
 
                   {/* logo */}
                 <a href='/admin'>
-                    <span className="text-xl font-bold tracking-tight text-blue-900 md:text-2xl md:m-3">الفقه
+                    <span className="text-2xl tracking-tight text-blue-900  md:m-3">الفقه
                     الشافعي</span>
                   </a>
 
