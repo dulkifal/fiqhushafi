@@ -23,7 +23,7 @@ const Fatwas = ({ fatwas } ) => {
                     <div className={styles.single } >
                        <div className='lg:p-6'>
 
-                            <h2>{fatwa.msg}</h2>
+                            <p className='text-sm'>{fatwa.msg}</p>
                         <p>{fatwa.id}</p>
                        </div>
                         
