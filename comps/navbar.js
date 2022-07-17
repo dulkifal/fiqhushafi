@@ -38,15 +38,11 @@ export default function Example() {
                 <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
 
                   {/* logo */}
-                <a href='/admin'>
-                    <span className="text-2xl tracking-tight text-blue-900  md:m-3">الفقه
+                <a href='/admin' className='w-1/5'>
+                    <span className="text-2xl tracking-tight text-blue-900  absolute right-1 top-1 md:m-3">الفقه
                     الشافعي</span>
                   </a>
 
-                  {/* <div className=' sm:items-center w-36'>
-
-                   <Search/>
-               </div> */}
 
                   {/* big screen */}
                   <div className="hidden sm:block sm:ml-6">
