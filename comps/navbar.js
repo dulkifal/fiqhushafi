@@ -81,15 +81,15 @@ export default function Example() {
               </div>
             </div>
             {/* small screen */}
-            <Disclosure.Panel className="sm:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1 shadow-inner">
+            <Disclosure.Panel className="sm:hidden absolute h-0 z-10 ">
+              <div className=" px-2 pt-2 pb-3 space-y-1 shadow-inner bg-gray-100">
                 {navigation.map((item) => (
                   <Disclosure.Button
                     key={item.name}
                     as="a"
                     href={item.href}
                     className={classNames(
-                      item.current ? 'bg-gray-900 ' : '',
+                      item.current ? 'bg-gray-900  underline' : 'border-b border-gray-300',
                       'block px-3 text-sm rounded-md   font-medium hover:underline'
                     )}
                     aria-current={item.current ? 'page' : undefined}

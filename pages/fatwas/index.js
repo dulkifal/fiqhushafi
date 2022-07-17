@@ -16,12 +16,12 @@ export const getServerSideProps  = async ({req}) => {
 const Fatwas = ({ fatwas } ) => {
      
     return (
-        <div className='p-6'>
-            <h1> All fatwas</h1>
+        <div className='lg:p-6 '>
+            
           {fatwas && fatwas.map(fatwa => (
                     // eslint-disable-next-line react/jsx-key
                     <div className={styles.single } >
-                       <div className='p-6'>
+                       <div className='lg:p-6'>
 
                             <h2>{fatwa.msg}</h2>
                         <p>{fatwa.id}</p>

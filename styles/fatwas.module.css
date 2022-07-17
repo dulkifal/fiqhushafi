@@ -1,10 +1,11 @@
 .single{
-    padding: 2px 16px;
+    padding: 2px 1px;
     background: #fff;
     display: block;
-    margin: 20px 10px;
+    margin: 1rem;
     border-left: 8px solid #fff;
     border-radius: 13px;
+    border-bottom: 1px solid rgb(190, 187, 187);
     
 
 }
