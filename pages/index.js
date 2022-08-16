@@ -17,7 +17,7 @@ export default function Home() {
             <div  className="py-8 grid md:grid-cols-2" dir='rtl'>
                 {
                     Array.from(Array(6).keys()).map(i => (
-                        <div  className=" items-center justify-center   m-3" key={i}>
+                        <div data-aos="fade-up"  className=" items-center justify-center   m-3" key={i}>
 
                             <div className=" bg-white p-6 shadow-md rounded">
                                 <div className="flex items-center border-b border-gray-200 pb-6">
@@ -63,7 +63,7 @@ export default function Home() {
                             </a>
                         </div>
                     </div>
-                    <div data-aos="zoom-in-up" className="py-1 px-4 shadow-lg rounded-lg">
+                    <div data-aos="fade-up" className="py-1 px-4 shadow-lg rounded-lg">
                         <br />
                         <h1>اتصل بنا</h1>
                         <p>

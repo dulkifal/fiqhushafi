@@ -4,7 +4,7 @@ import Navbar from "./navbar";
 
 const Layout = ({children}) => {
     return (
-        <div className="content">
+        <div className="content relative min-h-screen">
             <Navbar/>
             {children}
             <Footer/>

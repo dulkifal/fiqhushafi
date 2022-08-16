@@ -7,7 +7,7 @@ const Index = ({ data }) => {
       <div className=''>
         {data.map(note => {
           return (
-            <div key={note._id}>
+            <div data-aos="fade-up" key={note._id}>
               <div dir='rtl' className=' p-3 m-4 bg-gray-100 shadow-sm'  >
                 <div className='  '   >
                   <p className='underline font-bold px-3 py-2 rounded-md h-fit w-fit'>السؤال</p>

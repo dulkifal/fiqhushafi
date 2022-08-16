@@ -1,5 +1,4 @@
 
-import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { IoIosMenu, IoIosClose } from "react-icons/io"
 
@@ -45,7 +44,7 @@ export default function Example() {
 
 
                   {/* big screen */}
-                  <div className="w-0 md:w-auto sm:ml-6 duration-300 overflow-hidden">
+                  <div className="w-0 md:w-auto sm:ml-6   overflow-hidden">
 
                     <div className="flex space-x-4 ">
                       {navigation.map((item) => (
@@ -77,7 +76,7 @@ export default function Example() {
               </div>
             </div>
             {/* small screen */}
-            <Disclosure.Panel data-aos="fade-down" className="  absolute z-10 top-12  h-1/2 ">
+            <Disclosure.Panel data-aos="fade-down" className="  absolute z-10 top-12  h-1/2 py-6 w-1/3 text-center ">
               <div className=" px-2 pt-2 pb-3 space-y-1 shadow-inner  bg-gray-100">
                 {navigation.map((item) => (
                   <Disclosure.Button
