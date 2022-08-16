@@ -28,7 +28,7 @@ export default function Example() {
               <div className="relative flex items-center justify-between ">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
-                  <Disclosure.Button className="inline-flex items-center  justify-center p-2 rounded-md text-black  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <Disclosure.Button className=" inline-flex items-center   justify-center p-2 rounded-md text-black  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
 
                     {open ? (
                       <IoIosClose />) : (
@@ -37,15 +37,15 @@ export default function Example() {
                 </div>
                 <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
 
-                  {/* logo */}
-                <a href='/admin' className='w-1/5'>
+                  {/* icon */}
+                  <a href='/admin' className='w-1/5'>
                     <span className="text-2xl tracking-tight text-blue-900  absolute right-1 top-1 md:m-3">الفقه
-                    الشافعي</span>
+                      الشافعي</span>
                   </a>
 
 
                   {/* big screen */}
-                  <div className="hidden sm:block sm:ml-6">
+                  <div className="w-0 md:w-auto sm:ml-6 duration-300 overflow-hidden">
 
                     <div className="flex space-x-4 ">
                       {navigation.map((item) => (
@@ -77,16 +77,16 @@ export default function Example() {
               </div>
             </div>
             {/* small screen */}
-            <Disclosure.Panel className="sm:hidden absolute h-0 z-10 ">
-              <div className=" px-2 pt-2 pb-3 space-y-1 shadow-inner bg-gray-100">
+            <Disclosure.Panel data-aos="fade-down" className="  absolute z-10 top-12  h-1/2 ">
+              <div className=" px-2 pt-2 pb-3 space-y-1 shadow-inner  bg-gray-100">
                 {navigation.map((item) => (
                   <Disclosure.Button
                     key={item.name}
                     as="a"
                     href={item.href}
                     className={classNames(
-                      item.current ? 'bg-gray-900  underline' : 'border-b border-gray-300',
-                      'block px-3 text-sm rounded-md   font-medium hover:underline'
+                      item.current ? ' ' : 'border-b border-gray-300',
+                      'block px-3 leading-10  text-sm rounded-md   font-medium hover:underline'
                     )}
                     aria-current={item.current ? 'page' : undefined}
                   >
