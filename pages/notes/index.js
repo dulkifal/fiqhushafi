@@ -7,9 +7,14 @@ const Index = ({ data }) => {
       <div className=''>
         {data.map(note => {
           return (
+            <>
+            <a
+              style={{ textDecoration: "none" }}
+              href={`/notes/${note._id}`}
+            > 
             <div data-aos="fade-up" key={note._id}>
               <div dir='rtl' className=' p-3 m-4 bg-gray-100 shadow-sm'  >
-                <div className='  '   >
+                <div className='  '>
                   <p className='underline font-bold px-3 py-2 rounded-md h-fit w-fit'>السؤال</p>
                   <p  className='mx-6'>{note.title}</p>
                   <p className='underline font-bold px-3 py-2 rounded-md w-fit h-fit text-green-700 '>الجواب</p>
@@ -17,6 +22,8 @@ const Index = ({ data }) => {
                 </div>
               </div>
             </div>
+              </a>
+            </>
           );
         })}
       </div>

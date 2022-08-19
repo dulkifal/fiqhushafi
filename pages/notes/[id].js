@@ -3,10 +3,16 @@ const Details = ({ data }) => {
 
   return (
     <div>
-      <h1> السوال</h1>
-       <h1>{data.title}</h1>
-       <h1>الجواب</h1>
-      <h1>{data.descri}</h1>
+      <div data-aos="fade-up" key={ data._id}>
+        <div dir='rtl' className=' p-3 m-4 bg-gray-100 shadow-sm'  >
+          <div className='  '>
+            <p className='underline font-bold px-3 py-2 rounded-md h-fit w-fit'>السؤال</p>
+            <p className='mx-6'>{data.title}</p>
+            <p className='underline font-bold px-3 py-2 rounded-md w-fit h-fit text-green-700 '>الجواب</p>
+            <p className='mx-6 text-green-700 pb-3'>{data.descri}</p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

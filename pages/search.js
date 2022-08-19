@@ -83,7 +83,7 @@ export default function Search() {
                 <a
                   style={{ textDecoration: "none" }}
                   href={`/notes/${item._id}`}
-                >
+                > 
                   <div className="data-item">
                     <p>{item.title}</p>
                     <small>{item.category}</small>
