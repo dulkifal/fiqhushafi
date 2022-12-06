@@ -99,7 +99,7 @@ export default function Search() {
           {results.map((searchData, index => (
             <li className={styles.result} key={index}>
               <Link href={`/notes/${searchData._id}`}>
-                <a>{searchData.title}</a>
+                 {searchData.title} 
               </Link>
             </li>
           )))}

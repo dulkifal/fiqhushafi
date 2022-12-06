@@ -36,7 +36,7 @@ export default function Layout({ children, home }) {
             
             <h2   >
               <Link href="/">
-                <a  >{name}</a>
+               {name} 
               </Link>
             </h2>
           </>
@@ -46,7 +46,7 @@ export default function Layout({ children, home }) {
       {!home && (
         <div  >
           <Link href="/">
-            <a>← Back to home</a>
+           ← Back to home 
           </Link>
         </div>
       )}

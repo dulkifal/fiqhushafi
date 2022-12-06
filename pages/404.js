@@ -14,7 +14,7 @@ const NotFound = () => {
         <div className="not-found" dir='rtl'>
             <h1>آسف هذه الصفحة غير متوفرة</h1>
             
-            <p>العودة الى الصفحة  <Link href="/"><a> الرئيسية</a></Link> </p>
+            <p>العودة الى الصفحة  <Link href="/">  الرئيسية </Link> </p>
         </div>
     );
 }
